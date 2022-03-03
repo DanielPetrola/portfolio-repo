@@ -11,6 +11,15 @@ body {
   overflow-x: hidden;
 }
 
+.header {
+  background-image: url(/img/body-background.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(41, 43, 44, 0.5);
+  background-blend-mode: multiply;
+}
+
 body::before {
     display: block;
     content: '';
@@ -21,6 +30,7 @@ body::before {
     color: #E0C28F;
     font-weight: bold;
 }
+
 .nav {
     color: #000;
     font-weight: bold;
@@ -28,6 +38,18 @@ body::before {
     box-shadow: 1rem;
     background-color: rgba(255, 255, 255, 0.6);
   }
+
+.skills {
+  background-color: rgba(41, 43, 44, 0.8);
+  backdrop-filter: blur(0.6rem);
+  box-shadow: 1rem;
+  border-radius: 10px;
+  margin: 3%;
+}
+
+.h6 b {
+  color: aliceblue;
+}
 
 @media (min-width: 768px) {
   .portrait {
@@ -38,5 +60,8 @@ body::before {
 @media (min-width: 992px) {
     .short-story {
       width: 50%;
+    }
+    .p5 {
+      padding: 1rem;
     }
   }
